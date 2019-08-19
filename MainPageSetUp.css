@@ -1,0 +1,32 @@
+body {
+  background-color: #66ccff;
+  font-family: 'EB Garamond';font-size: 22px;
+}
+
+#MainExerciseBox{
+  border-style: solid;
+  float: left;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+#currentExercise{
+  height: 100%;
+  width: 100%;
+  float: left;
+
+}
+
+#sidePicture{
+  height: 75%;
+  width: 75%;
+  border-radius: 8px;
+}
+
+#setsToDo{
+  background-color: #bfbfbf;
+  border-style: none solid solid solid;
+  margin:0px;
+  padding:0px;
+}
