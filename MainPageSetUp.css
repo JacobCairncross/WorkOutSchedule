@@ -9,6 +9,7 @@ body {
 
 #navBarLinks{
   color: #FFFFFF;
+  font-size: 150%;
 }
 
 #mainExerciseBox{
@@ -38,6 +39,7 @@ body {
 #workoutsComingUp{
   background-color: #bfbfbf;
   border: 1px solid;
+  border-top-width: 0px;
 }
 
 #sidePicture{
