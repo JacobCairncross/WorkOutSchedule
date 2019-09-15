@@ -3,25 +3,47 @@ body {
   font-family: 'EB Garamond';font-size: 22px;
 }
 
-#MainExerciseBox{
-  border-style: solid;
+#navigationBar{
+  border: 1px solid black;
+}
+
+#navBarLinks{
+  color: #FFFFFF;
+}
+
+#mainExerciseBox{
+  border: 1px solid black;
+  border-right-width: 0px; 
+  border-top-width:0px;
   float: left;
   text-align: left;
   padding: 0px;
   margin: 0px;
+  background-color: #bfbfbf;
 }
 
-#currentExercise{
-  height: 100%;
+
+#currentExerciseImage{
+  height: 90%;
   width: 100%;
   float: left;
+}
 
+#currentExerciseText{
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#workoutsComingUp{
+  background-color: #bfbfbf;
+  border: 1px solid;
 }
 
 #sidePicture{
   height: 75%;
-  width: 75%;
-  border-radius: 8px;
+  width: 100%;
+ 
 }
 
 #setsToDo{
