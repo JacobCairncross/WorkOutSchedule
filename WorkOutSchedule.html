@@ -16,48 +16,44 @@
   <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
 </head>
 <body>
-
-    <div class="row" id="navigationBar">
-      <div class="col-sm-10">
-        <a id="navBarLinks" href="homepage.html"> HOME </a>
-      </div>
-      <div class="col-sm-2">
-        <a id="navBarLinks" href="account.html"> ACCOUNT </a>
+    <!-- This is the nav bar code-->
+    <div class="container-fluid">
+      <div class="row" id="navigationBar">
+        <div class="col-sm-10">
+          <a id="navBarLinks" href="homepage.html"> HOME </a>
+        </div>
+        <div class="col-sm-2">
+          <a id="navBarLinks" href="account.html"> ACCOUNT </a>
+        </div>
       </div>
     </div>
-    <div class="container">
+
+
+    <!-- This is the main exercises section of code-->
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-1">
-        </div>
+        <div class="col-sm-1"></div>
         <div class="col-sm-8" id="mainExerciseBox">
-
-            <img id="currentExerciseImage" src="pushUps.jpg" alt="currentExercise">
+            <img id="currentExerciseImage" src="pic1.jpg" alt="currentExercise">
             <div id="currentExerciseText"> Yo Yo Yo </div>
-
         </div>
         <div class="col-sm-2">
           <div style="padding: 0px;" class="container">
             <div id="workoutsComingUp" class="row">
 
-                <img id="sidePicture" src="tricepDips.jpg" alt="side picture">
+                <img id="sidePicture" src="pic2.jpg" alt="side picture">
                 <p> mittens </p>
             </div>
             <div id="workoutsComingUp" class="row">
 
-                <img id="sidePicture" src="squats.jpg" alt="side picture">
+                <img id="sidePicture" src="pic3.jpg" alt="side picture">
                 <p> simba </p>
 
             </div>
             <div id="workoutsComingUp" class="row">
 
-                <img id="sidePicture" src="lunges.jpg" alt="side picture">
+                <img id="sidePicture" src="pic4.jpg" alt="side picture">
                 <p> dot </p>
-
-            </div>
-            <div id="workoutsComingUp" class="row">
-
-                <img id="sidePicture" src="crunches.jpg" alt="side picture">
-                <p> skip </p>
 
             </div>
           </div>
@@ -67,5 +63,29 @@
       </div>
 
     </div>
+
+
+    <!-- This will be the footer section of code-->
+    <div id="test">
+      
+    </div>
 </body>
 </html>
+<script>
+class cat {
+  constructor(source, name){
+    this.source = source;
+    this.name = name;
+  }
+};
+
+var pictures = ["pic1","pic2","pic3","pic4","pic5"];
+var names = ["Mittens","Sammy","Dippy","Danger","Precious"]
+var cats = [];
+for(let i = 0; i< pictures.length; i++){
+  cats[i] = new cat(pictures[i],names[i])
+}
+for(let i = 0;i<cats.length;i++){
+  document.getElementById("test").innerHTML += '<li>'+ cats[i].name + '</li>';
+}
+</script>

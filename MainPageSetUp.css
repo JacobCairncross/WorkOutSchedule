@@ -4,7 +4,7 @@ body {
 }
 
 #navigationBar{
-  border: 1px solid black;
+
 }
 
 #navBarLinks{
@@ -15,7 +15,7 @@ body {
 #mainExerciseBox{
   border: 1px solid black;
   border-right-width: 0px; 
-  border-top-width:0px;
+  border-top-width:1px;
   float: left;
   text-align: left;
   padding: 0px;
