@@ -1,22 +1,17 @@
-class cat {
+class exercise {
     constructor(source, name){
       this.source = source;
       this.name = name;
     }
   }
   
-  var pictures = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg","empty.jpg","empty.jpg","empty.jpg","empty.jpg"];
-  var names = ["Mittens","Sammy","Dippy","Danger","Precious","N/A","N/A","N/A","N/A"]
-  var cats = [];
+  var pictures = ["crunches.jpg","lunges.jpg","plank.jpg","pushUps.jpg","squats.jpg","tricepDips.jpg","empty.jpg","empty.jpg","empty.jpg","empty.jpg"];
+  var names = ["15","12","60 sec","12","12","12","N/A","N/A","N/A","N/A"]
+  var exercises = [];
   for(let i = 0; i< pictures.length; i++){
-    cats[i] = new cat(pictures[i],names[i])
+    exercises[i] = new exercise(pictures[i],names[i])
   }
 
-  //This will go from 1 to 3 because thats how many side pictures there are
-  /*for(let i = 0;i<4;i++){ 
-    document.getElementById("currentlyDisplayedExercisePicture" + (i+1).toString() ).src = cats[i].source;
-    document.getElementById("currentlyDisplayedExerciseText" + (i+1).toString() ).innerHTML = cats[i].name;
-  }*/
 
   updateImage(pictures, names, 5);
   
@@ -29,6 +24,13 @@ class cat {
         exerciseDisplayBox++;
     }
     if(timesLeftToCall > 0){
-        setTimeout(updateImage, 3000, exercisePictureArr, setsToDoArr, timesLeftToCall-1);
+        setTimeout(updateImage, 120000, exercisePictureArr, setsToDoArr, timesLeftToCall-1);
     }
+    else{
+        workoutFinished();
+    }
+  }
+  //To do for when workout is finished.
+  function workoutFinished(){
+
   }
